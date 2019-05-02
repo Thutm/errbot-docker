@@ -1,0 +1,6 @@
+version: '3'
+services:
+  errbot:
+    build: .
+    env_file:
+      - ./docker-compose.env
