@@ -8,7 +8,7 @@ WORKDIR /err
 
 ADD config.py /err/config.py
 
-# Installation, not using virtualenv as we should have python3 as default.
+# Installation, not using virtualenv as we should have python3.7 as default from the image.
 RUN pip install websocket-client slackclient errbot
 
 USER err
